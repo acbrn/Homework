@@ -1,0 +1,76 @@
+/* 
+The #bio <ul> at the top of the page
+<img> tags <div> tags links */
+
+html {
+    background-color: antiquewhite;
+}
+body {
+    text-align: center;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+}
+img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+div {
+    display: flex;
+    border: 2px solid burlywood;
+    margin: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+ul {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+#introPic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#bio {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#bio > li {
+    padding: 2px;
+}
+
+#pro {
+    width: auto;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div {
+        border: none;
+    }
+}
